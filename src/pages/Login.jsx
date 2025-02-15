@@ -14,7 +14,7 @@ const Login = () => {
                 <button type="submit" className="login-button">Iniciar sesión</button>
 
                 <p>
-                    No tienes cuenta?{" "}
+                    ¿No tienes cuenta?{" "}
                     <Link to="/form">
                         <button className="register-button">
                             <u>Regístrate</u>
@@ -22,7 +22,7 @@ const Login = () => {
                     </Link>
                 </p>
             </form>
-            <Link to="/">Home</Link>
+            
         </div>
     );
 };
