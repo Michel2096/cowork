@@ -22,10 +22,10 @@ const UsuarioForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" name="nombre" placeholder="nombre" onChange={handleChange} />
-            <input type="email" name="correo" placeholder="correo" onChange={handleChange} />
-            <input type="password" name="pass" placeholder="contraseña" onChange={handleChange} />
-            <button type="submit">Crear usuario</button>
+            <input type="text" name="nombre" placeholder="Nombre" onChange={handleChange} />
+            <input type="email" name="correo" placeholder="Correo" onChange={handleChange} />
+            <input type="password" name="pass" placeholder="Contraseña" onChange={handleChange} />
+            <button className="login-button" type="submit">Crear usuario</button>
         </form>
     );
 
