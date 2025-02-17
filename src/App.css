@@ -187,7 +187,7 @@ p {
   }
 
   .login-button {
-    height: 30px; /* Reducir la altura del botón */
+    height: 30px; 
     font-size: 0.75rem; /* Reducir el tamaño de la fuente */
   }
 
@@ -203,49 +203,526 @@ p {
 
 /*Estilos de Home*/
 
-.title{
+
+.titleW{
   color: #ffffff;
+  font-size:45px;
 }
 
 .text{
   color: #ffffff;
 }
+
+.background-image {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+}
+
 .header {
   width: 100%;
-  height: 10%;
+  height: 11%; 
   padding: 1px;
-  background-color: var(--c1);
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
+  justify-content: center;
   align-items: center;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  background-color: #00000034; 
+  color: #ffffff;
 }
 
-/* Estilos del botón de login */
+.title {
+  font-size: 80px;
+  font-weight: bold;
+  color: #ffffff ;
+}
+
 .nav {
-  background-color: #000000;
   color: #ffffff;
   font-family: 'Times New Roman', Times, serif;
-  width: 100px; /* Ajustar el ancho del botón */
+  width: 100px;
   height: 40px;
   cursor: pointer;
-  font-size: 1rem; /* Tamaño de fuente relativo */
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 15px;
-  position: absolute; /* Posicionar el botón de forma absoluta */
-  right: 10px; /* Mover el botón hacia la derecha */
-  top: 50%; /* Centrar verticalmente */
-  transform: translateY(-50%); /* Ajustar la posición vertical */
+  font-size: 18px;
+  transition: all 0.3s ease; 
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
-  justify-content: center; /* Centrar el texto horizontalmente */
-  align-items: center; /* Centrar el texto verticalmente */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; 
+}
+
+.nav:hover {
+  text-decoration: underline; 
 }
 
 
-.header .nav {
-  margin-left: auto; /* Mover el botón hacia la derecha */
+.section {
+  position: absolute;
+  top: 15%;
+  left: 13%;
+  width: 75%;
+  text-align: center;
+  z-index: 1;
+}
+
+.text {
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 10%;
+  font-size: 50px;
+  font-weight: bolder;
+  line-height: 1.5;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.text-2 {
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 24px;
+  padding-top: 10px;
+  margin: 0;
+  line-height: 1.4;
+  width: 50%;
+  padding-left: 25%;
+}
+
+.button-section {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 32%;
+
+}
+
+.btn2 {
+  background-color: transparent; 
+  color: #ffffff; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  border: 2px solid #ffffff;
+  padding: 10px 30px;
+  margin: 10px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+}
+
+.btn2:hover {
+  background-color: #ffffff; 
+  color: #000000; 
+}
+
+.section3{
+  width: 100%;
+  height: 50vh; 
+  --s: 100px; 
+  --c1: #000000; 
+  --c2: #1e1e1e; 
+
+  --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+    var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
+    var(--c1) 76% 84%, var(--c2) 86% 94%;
+
+  background: radial-gradient(
+        100% 100% at 100% 0,
+        var(--c1) 4%,
+        var(--_g),
+        #0008 96%,
+        #0000
+      ),
+      radial-gradient(
+          100% 100% at 0 100%,
+          #0000,
+          #0008 4%,
+          var(--_g),
+          var(--c1) 96%
+        )
+        var(--c1);
+  background-size: var(--s) var(--s);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+}
+
+
+.text-sect {
+  color: #ffffff;
+  font-size: 33px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0; 
+  padding-top: 10%;
+}
+
+.section4 {
+  width: 100%;
+  height: 90vh; /* Altura completa de la pantalla */
+  background-image: url('./assets/Robot.png'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: relative; 
+  color: #ffffff;
+  text-align: center; 
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.content {
+  position: absolute; 
+  top: 30px;
+  right: 100px; 
+  z-index: 2; 
+  max-width: 450px; 
+  padding: 20px; 
+  background-color: transparent; 
+  border-radius: 10px; 
+  
+}
+
+
+.title4 {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  text-align: right;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+  color: #ffffff;
+
+
+}
+
+.description {
+  font-size: 16px; 
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin-top: 35px; 
+  text-align: right;
+  line-height: 1.8;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+  color: #ffffff;
+}
+
+.section5 {
+  width: 100%;
+  height: 90vh; 
+  --s: 100px; 
+  --c1: #000000; 
+  --c2: #1e1e1e; 
+
+  --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+    var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
+    var(--c1) 76% 84%, var(--c2) 86% 94%;
+
+  background: radial-gradient(
+        100% 100% at 100% 0,
+        var(--c1) 4%,
+        var(--_g),
+        #0008 96%,
+        #0000
+      ),
+      radial-gradient(
+          100% 100% at 0 100%,
+          #0000,
+          #0008 4%,
+          var(--_g),
+          var(--c1) 96%
+        )
+        var(--c1);
+  background-size: var(--s) var(--s);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.black-box {
+  width: 90%;
+  max-width: 1200px; 
+  background-color: #1e1e1e; 
+  padding: 40px;
+  border-radius: 15px; 
+  display: flex; 
+  gap: 30px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  height: 60%;
+  align-items: center; 
+}
+.black-box {
+  width: 90%; /* Ancho del cuadro negro */
+  max-width: 1200px; /* Máximo ancho para pantallas grandes */
+  background-color: #1e1e1e; /* Fondo negro */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex; /* Organiza las secciones internas en fila */
+  gap: 30px; /* Espacio entre las secciones internas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  height: 60%; /* Altura del cuadro */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.text-section {
+  flex: 1; /* Aumenta el espacio para el texto (el doble del espacio de la imagen) */
+  color: #ffffff; 
+  text-align: center; /* Alinea el texto al centro horizontalmente */
+  display: flex; /* Usa flexbox para centrar verticalmente */
+  flex-direction: column; /* Apila los elementos en columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+ 
+}
+
+.text-section .points {
+  list-style-type: square; /* Usa viñetas cuadradas */
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left; /* Alinea el texto de la lista a la izquierda */
+  margin: 0 auto; /* Centra la lista horizontalmente */
+  max-width: 400px; /* Incrementa el ancho máximo de la lista */
+  line-height: 2.2;
+}
+
+.image-section {
+  flex: 1; /* Reduce el espacio para la imagen */
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+}
+
+.image-section img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+}
+.section6 {
+  width: 100%;
+  height: 80vh; 
+  --s: 100px; 
+  --c1: #000000; 
+  --c2: #1e1e1e; 
+
+  --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+    var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
+    var(--c1) 76% 84%, var(--c2) 86% 94%;
+
+  background: radial-gradient(
+        100% 100% at 100% 0,
+        var(--c1) 4%,
+        var(--_g),
+        #0008 96%,
+        #0000
+      ),
+      radial-gradient(
+          100% 100% at 0 100%,
+          #0000,
+          #0008 4%,
+          var(--_g),
+          var(--c1) 96%
+        )
+        var(--c1);
+  background-size: var(--s) var(--s);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section {
+  flex: 1; /* Ocupa la mitad del espacio disponible */
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+}
+
+.image-section img {
+  height: 100%; /* Aumenta la altura de la imagen */
+  width: 80%; /* Mantiene la proporción de aspecto */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+  border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+.text-section {
+  flex: 1;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.8;
+}
+
+.text-section h2 {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 20px;
+  padding-right: 70px;
+}
+
+.text-section p {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  text-align: justify;
+  padding-right: 80px;
+  color: #ffffff;
+}
+.section7 {
+  width: 100%;
+  height: 90vh; /* Altura completa de la pantalla */
+  background-image: url('./assets/Casa.png'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  position: relative; /* Permite posicionar elementos internos */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.content7 {
+  max-width: 600px; /* Limita el ancho del contenido */
+  text-align: center; /* Alinea el texto al centro */
+  padding: 20px; /* Espaciado interno */
+}
+
+.title7 {
+  font-size: 40px; /* Tamaño del título */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0; 
+  color: #ffffff;/* Elimina cualquier margen predeterminado */
+}
+
+.description7 {
+  font-size: 20px; /* Tamaño del texto */
+  font-family: Arial, sans-serif;
+  line-height: 1.8; /* Espaciado entre líneas */
+  margin-top: 15px; 
+  color: #ffffff;
+ }
+
+ .footer7 {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.section8 {
+  width: 100%;
+  height: auto; /* Altura ajustable según el contenido */
+  background-color: #f9f9f9; /* Fondo claro para contraste */
+  padding: 50px 20px; /* Espaciado interno */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.content8 {
+  max-width: 600px; /* Limita el ancho del contenido */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.title8 {
+  font-size: 36px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 20px; /* Espacio entre el título y la descripción */
+  color: #333333;
+  
+}.section8 {
+  width: 100%;
+  height: 10vh; /* Altura ajustada para ocupar más espacio */
+  --s: 100px; /* Tamaño del patrón */
+  --c1: #000000; /* Color principal */
+  --c2: #1e1e1e; /* Color secundario */
+  --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+    var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
+    var(--c1) 76% 84%, var(--c2) 86% 94%;
+  background: 
+    radial-gradient(
+      100% 100% at 100% 0,
+      var(--c1) 4%,
+      var(--_g),
+      #0008 96%,
+      #0000
+    ),
+    radial-gradient(
+      100% 100% at 0 100%,
+      #0000,
+      #0008 4%,
+      var(--_g),
+      var(--c1) 96%
+    ) var(--c1);
+  background-size: var(--s) var(--s); /* Repetición del patrón */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.content8 {
+  max-width: 1200px; /* Limita el ancho del contenido */
+  display: flex; /* Divide el contenido en dos columnas */
+  justify-content: space-between; /* Espacio entre las columnas */
+  align-items: center; /* Alinea verticalmente */
+  color: #ffffff; /* Color del texto */
+}
+
+.left-column,
+.right-column {
+  flex: 1; /* Ambas columnas ocupan el mismo espacio */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.left-column {
+  padding-right: 20px; /* Espacio entre las columnas */
+}
+
+.right-column {
+  padding-left: 20px; /* Espacio entre las columnas */
+}
+
+.title8 {
+  font-size: 36px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 20px; /* Espacio entre el título y la descripción */
+  color: #ffffff; /* Color blanco para el título */
+}
+
+.description8 {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin-bottom: 30px; /* Espacio entre la descripción y la información de contacto */
+  color: #ffffff; /* Color blanco para el texto */
+}
+
+.contact-info p {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px; /* Espacio entre las líneas de información */
+  color: #ffffff; /* Color blanco para el texto */
+}
+
+.contact-info strong {
+  font-weight: bold; /* Resalta los títulos de cada dato */
+  margin-right: 10px; /* Espacio entre el título y el valor */
 }

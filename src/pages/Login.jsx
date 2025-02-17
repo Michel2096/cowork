@@ -17,8 +17,12 @@ const Login = () => {
                     ¿No tienes cuenta?{" "}
                     <Link to="/form">
                         <button className="register-button">
-                            <u>Regístrate</u>
-                        </button>
+                            Regístrate                      </button>
+                    </Link>
+
+                    <Link to="/form">
+                        <button className="register-button">
+                            Recuperar contraseña                        </button>
                     </Link>
                 </p>
             </form>
