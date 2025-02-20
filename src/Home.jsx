@@ -100,7 +100,7 @@ const Home = () => {
     <div class="right-column">
       <div class="contact-info">
         <p><strong>Teléfono:</strong> +52 1 55 4006 0457</p>
-        <p><strong>Correo Electrónico:</strong> brendalaruqisregañin@mbpindustries.com</p>
+        <p><strong>Correo Electrónico:</strong> brendaceo@mbpindustries.com</p>
         <p><strong>Dirección:</strong> Av. Chapultepec n0.35 San Mateo Atarasquillo</p>
       </div>
     </div>
