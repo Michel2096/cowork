@@ -1,19 +1,18 @@
-import { useEffect, useState } from "react";   
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-const UsuarioList = ()=> {
+const UsuarioList = () => {
     const [usuarios, setUsuarios] = useState([]);
 
-    useEffect( () =>{
+    useEffect(() => {
         axios.get("http://localhost:3001/api/usuarios")
-        .then(response => setAlumnos(response.data))
-        .catch(error => console.error(error));
+            .then(response => setUsuarios(response.data)).catch(error => console.error(error));
     }, []);
 
-    return(
+    return (
         <div>
-            
+
         </div>
     )
 }
